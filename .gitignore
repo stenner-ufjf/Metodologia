@@ -1,0 +1,11 @@
+*
+!*/
+!.gitignore
+!/README.md
+!/Evolucionário.md
+!/Evolucionário.tex
+!/Evolucionário.pdf
+!/Revolucionário.md
+!/Artigos/
+!/Artigos/RADAR_an_in-building_RF-based_user_location_and_tracking_system.pdf
+!/Artigos/Wi-Fi_RTT_Indoor_Positioning_Using_Visibility_Matching_With_NLOS_Receptions.pdf

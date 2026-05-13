@@ -1,0 +1,331 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+
+\definecolor{ufjfBlue}{HTML}{12355B}
+\definecolor{deepTeal}{HTML}{0B6E69}
+\definecolor{warmGray}{HTML}{F4F1EC}
+\definecolor{textDark}{HTML}{202124}
+\definecolor{mutedText}{HTML}{5F6368}
+\definecolor{accentGold}{HTML}{C99700}
+
+\setbeamercolor{normal text}{fg=textDark,bg=warmGray}
+\setbeamercolor{frametitle}{fg=white,bg=ufjfBlue}
+\setbeamercolor{title}{fg=ufjfBlue}
+\setbeamercolor{subtitle}{fg=deepTeal}
+\setbeamercolor{author}{fg=textDark}
+\setbeamercolor{institute}{fg=mutedText}
+\setbeamercolor{date}{fg=mutedText}
+\setbeamercolor{itemize item}{fg=deepTeal}
+\setbeamercolor{itemize subitem}{fg=deepTeal}
+\setbeamercolor{block title}{fg=white,bg=deepTeal}
+\setbeamercolor{block body}{fg=textDark,bg=white}
+\setbeamercolor{block title alerted}{fg=white,bg=accentGold}
+\setbeamercolor{block body alerted}{fg=textDark,bg=white}
+\setbeamercolor{alerted text}{fg=accentGold}
+
+\setbeamerfont{normal text}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate body}{size=\footnotesize}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+\setbeamerfont{block title}{size=\footnotesize,series=\bfseries}
+\setbeamerfont{block body}{size=\footnotesize}
+\setbeamerfont{block title alerted}{size=\footnotesize,series=\bfseries}
+\setbeamerfont{block body alerted}{size=\footnotesize}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\raisebox{0.25ex}{\color{deepTeal}\rule{0.55ex}{0.55ex}}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.25ex}{\color{deepTeal}\rule{0.38ex}{0.38ex}}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\textwidth,ht=2.6ex,dp=1.1ex,leftskip=0.8em,rightskip=0.8em]{author in head/foot}
+    \color{mutedText}\scriptsize Metodologia Científica -- Análise epistemológica evolucionária\hfill\insertframenumber/\inserttotalframenumber
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{frametitle}{
+  \nointerlineskip
+  \begin{beamercolorbox}[wd=\textwidth,ht=4.2ex,dp=1.4ex,leftskip=0.9em]{frametitle}
+    \usebeamerfont{frametitle}\insertframetitle
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{title page}{
+  \vspace*{0.55cm}
+  {\color{accentGold}\rule{0.18\textwidth}{2.5pt}}
+  \vspace{0.55cm}
+
+  \begin{minipage}{0.90\textwidth}
+    {\usebeamerfont{title}\Large\bfseries\inserttitle\par}
+    \vspace{0.28cm}
+    {\usebeamerfont{subtitle}\large\insertsubtitle\par}
+    \vspace{0.80cm}
+    {\large\insertauthor\par}
+    \vspace{0.20cm}
+    {\normalsize\insertinstitute\par}
+    \vspace{0.55cm}
+    {\normalsize\insertdate\par}
+  \end{minipage}
+
+  \vfill
+  {\color{ufjfBlue}\rule{\textwidth}{2.5pt}}
+}
+
+\newcommand{\slidecite}[1]{%
+  \vfill
+  {\color{mutedText}\footnotesize\raggedright Fonte: #1\par}
+}
+
+\title{Análise Epistemológica}
+\subtitle{\textit{Wi-Fi RTT Indoor Positioning}\\\textit{Using Visibility Matching With NLOS Receptions}}
+\author{Programa de Pós-Graduação em Ciência da Computação -- UFJF}
+\institute{Disciplina: Metodologia Científica -- Prof. Marcelo Bernardes Vieira}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Juízo central}
+  \footnotesize
+  \begin{itemize}
+    \item Este é um artigo \textbf{evolucionário}: refina o paradigma vigente de posicionamento por rádio em ambientes internos, mas não inaugura um novo.
+    \item Não cria uma nova ideia central; combina ideias já disponíveis.
+    \item Tem genealogia rastreável: RADAR, Wi-Fi fingerprinting, RTT, NLOS e \textit{shadow/visibility matching}.
+    \item O ganho quantitativo é forte, mas da ordem de refinamento técnico, não de ruptura.
+    \item Isso não diminui seu valor científico: engenharia avança muito por ciência normal bem feita.
+    \item Representa o estado da arte recente em posicionamento Wi-Fi RTT sob condições NLOS.
+  \end{itemize}
+
+  \slidecite{Kuhn; Lyu et al. (2025); Bahl e Padmanabhan (2000).}
+\end{frame}
+
+\begin{frame}{Motivação e relevância}
+  \footnotesize
+  \begin{itemize}
+    \item Trabalho recente: publicado em junho de 2025.
+    \item Publicado no \textit{IEEE Internet of Things Journal}, periódico Q1 de alto impacto.
+    \item Dá continuidade a trabalhos do IPN-Lab (Hong Kong Polytechnic University).
+    \item Guohao Zhang, com h-index 27 e mais de 2.300 citações, é o autor-âncora.
+    \item Fronteira ativa: \textit{NLOS identification} + Wi-Fi RTT.
+    \item Indicadores bibliométricos ainda iniciais: 5--6 citações, Impact Factor JCR'24 de 8,9 e 5-year Impact Factor de 9,6.
+  \end{itemize}
+
+  \vspace{0.18cm}
+  \begin{block}{Leitura bibliométrica}
+    As poucas citações refletem a curta janela de circulação. O ponto forte, por ora, é a posição em uma frente técnica recente, não uma influência já consolidada.
+  \end{block}
+
+  \slidecite{Lyu et al. (2025); \textit{IEEE Internet of Things Journal}; Google Scholar.}
+\end{frame}
+
+\begin{frame}{Problema e situação de contorno}
+  \footnotesize
+  \vspace{-0.18cm}
+  \begin{block}{Pergunta que organiza o artigo}
+    Como posicionar um usuário em ambiente interno por Wi-Fi RTT quando há NLOS severo, poucos APs e medições com outliers?
+  \end{block}
+
+  \vspace{0.24cm}
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{0.92}
+  \begin{tabular}{>{\bfseries\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
+    \toprule
+    Elemento & Recorte epistemológico \\
+    \midrule
+    Objeto & Dispositivo, APs Wi-Fi, RTT/RSSI e planta digital. \\
+    Fenômeno & Propagação LOS/NLOS, atenuação, multipercurso e erro de alcance. \\
+    Domínio & Ambientes internos com infraestrutura Wi-Fi e planta conhecida. \\
+    Situação de contorno & NLOS severo, poucos APs, posições conhecidas e planta digital disponível. \\
+    Condições de operação & RTT/RSSI, candidatos em grade e visibilidade por interseção linha--parede. \\
+    Métrica & Erro de posição, média, mediana, desvio padrão e CDF. \\
+    \bottomrule
+  \end{tabular}
+
+\end{frame}
+
+\begin{frame}{O deslocamento epistemológico}
+  \footnotesize
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \textbf{Antes: NLOS como erro}
+      \begin{itemize}
+        \item O NLOS degrada o RTT e gera erro de alcance.
+        \item O sinal bloqueado ou refletido aparece como perturbação.
+        \item A tarefa é mitigar, corrigir ou atenuar essa perturbação.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \textbf{Neste artigo: NLOS como informação}
+      \begin{itemize}
+        \item O NLOS ajuda a inferir se um AP está visível ou invisível.
+        \item A visibilidade dos APs torna-se uma característica saliente.
+        \item A planta digital transforma essa característica em restrição espacial.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \begin{alertblock}{Mudança conceitual}
+    O NLOS deixa de ser apenas erro de medição e passa a revelar uma característica saliente: a visibilidade dos APs.
+  \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{Hipótese e ensaio de solução}
+  \footnotesize
+  \begin{itemize}
+    \setlength{\itemsep}{0.25cm}
+    \item \textbf{Hipótese física}: paredes alteram RTT e RSSI de modo informativo.
+    \item \textbf{Hipótese geométrica}: a planta digital permite prever visibilidade dos APs.
+    \item \textbf{Hipótese estatística}: RTT/RSSI permitem inferir visibilidade observada.
+    \item \textbf{Hipótese computacional}: a melhor posição é a que maximiza a coerência entre alcance e visibilidade.
+    \item \textbf{Ensaio de solução}: modelo multiwall de RTT + visibilidade simulada + visibilidade observada + busca em grade.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Conteúdo lógico e empírico}
+  \footnotesize
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \textbf{Conteúdo lógico}
+      \begin{itemize}
+        \item Equações de alcance.
+        \item Modelo multiwall.
+        \item Interseção linha--parede.
+        \item XNOR de visibilidade.
+        \item Função de pontuação.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \textbf{Conteúdo empírico}
+      \begin{itemize}
+        \item Três ambientes reais na PolyU.
+        \item Três APs Google Nest Wi-Fi.
+        \item RTT/RSSI a 3 Hz.
+        \item Ground truth por LiDAR.
+        \item Comparação com baselines.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \begin{alertblock}{Papel no artigo}
+    O modelo formal define o que o método permite inferir; os experimentos indicam quais inferências se sustentam como observação nos cenários testados.
+  \end{alertblock}
+
+  \slidecite{Lyu et al. (2025), Seção V.}
+\end{frame}
+
+\begin{frame}{Evidência experimental}
+  \footnotesize
+  \setlength{\tabcolsep}{2pt}
+  \renewcommand{\arraystretch}{0.95}
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    Método & Corr. média & Corr. mediana & Lounge média & Lounge mediana & Suíte média & Suíte mediana \\
+    \midrule
+    TRI & 1,399 & 1,187 & 2,415 & 2,683 & 1,672 & 1,688 \\
+    PF & 1,462 & 1,314 & 2,444 & 2,588 & 1,854 & 1,866 \\
+    SMACOF & 1,402 & 1,166 & 1,601 & 1,473 & 1,814 & 1,772 \\
+    \textbf{VM} & \textbf{0,681} & \textbf{0,673} & \textbf{0,801} & \textbf{0,785} & \textbf{0,695} & \textbf{0,823} \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{0.30cm}
+  \begin{block}{Corroboração, não prova}
+    A evidência sustenta a vantagem do VM nos cenários testados, mas não autoriza concluir superioridade universal.
+  \end{block}
+
+  \slidecite{Lyu et al. (2025), Tabela I.}
+\end{frame}
+
+\begin{frame}{Falseabilidade e reprodutibilidade}
+  \footnotesize
+  \begin{columns}[T]
+    \begin{column}{0.47\textwidth}
+      \textbf{Como falsear}
+      \begin{itemize}
+        \item Testar layouts e materiais diferentes.
+        \item Alterar quantidade e distribuição de APs.
+        \item Usar plantas incompletas ou desatualizadas.
+        \item Comparar com métodos posteriores.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.49\textwidth}
+      \textbf{Como reproduzir}
+      \begin{itemize}
+        \item Há equipamentos, frequência e métricas.
+        \item Há equações e baselines.
+        \item Faltam código, dataset e parâmetros completos.
+        \item A réplica exata depende da planta e do ambiente.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.25cm}
+  \begin{alertblock}{Leitura popperiana}
+    O artigo oferece uma teoria operacional criticável: boa ciência, mas ainda dependente de condições auxiliares.
+  \end{alertblock}
+
+\end{frame}
+
+\begin{frame}{Análise crítica}
+  \footnotesize
+  \begin{tabular}{>{\bfseries\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.66\textwidth}}
+    \toprule
+    Dimensão & Avaliação crítica \\
+    \midrule
+    Problema & Bem delimitado: NLOS severo, poucos APs e outliers de distância. \\
+    Hipótese & Plausível: NLOS deixa de ser apenas erro e passa a carregar informação espacial. \\
+    Método & Coerente, mas dependente de planta digital correta e ajuste de parâmetros. \\
+    Evidência & Boa nos três cenários testados, com comparação com baselines. \\
+    Generalização & Limitada para outros edifícios, materiais, densidades de APs e mudanças ambientais. \\
+    Reprodutibilidade & Parcial: há equações e métricas, mas faltam código, dataset e parâmetros completos. \\
+    \bottomrule
+  \end{tabular}
+
+  \vspace{0.15cm}
+  \begin{block}{Crítica central}
+    O método funciona bem nos cenários testados, mas ainda não há evidência de robustez em ambientes internos variados.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Limites e alcance da contribuição}
+  \footnotesize
+  \begin{itemize}
+    \item \textbf{Força epistemológica}: muda o estatuto do NLOS, de perturbação experimental para pista informacional.
+    \item \textbf{Força metodológica}: articula modelo físico, geometria da planta, inferência LOS/NLOS e validação empírica.
+    \item \textbf{Limite de representação}: o ambiente real é reduzido a planta digital, APs, paredes e candidatos em grade.
+    \item \textbf{Limite operacional}: portas, móveis, pessoas, materiais e erros na planta podem alterar a visibilidade esperada.
+    \item \textbf{Impacto}: por ser recente, o baixo número de citações não é fraqueza científica; apenas impede afirmar uma influência já consolidada.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Síntese final}
+  \footnotesize
+  \begin{itemize}
+    \item O artigo avança por aproximação sucessiva, não por ruptura.
+    \item O centro epistemológico é a mudança de estatuto do NLOS.
+    \item Opera predominantemente em chave Kantiana: sintetiza o modelo formal Leibniziano/Multiwall com dados empíricos Lockeanos de RSSI/RTT.
+    \item A evidência é forte para os cenários testados e limitada para generalização.
+    \item A crítica principal recai sobre o alcance externo, a dependência da planta, a calibração e os artefatos de reprodução.
+  \end{itemize}
+
+  \vspace{0.28cm}
+  \begin{alertblock}{Frase de fechamento}
+    O artigo não muda a pergunta da área; ele melhora a resposta ao transformar uma fraqueza experimental em uma pista epistemologicamente útil.
+  \end{alertblock}
+
+\end{frame}
+
+\end{document}
